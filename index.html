@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Intro</title>
+        <style>
+            body {
+                background-color: rgb(250, 196, 205);
+            }
+            div {
+                background-image: url('kuro.webp');
+                background-size: 100% 100%;
+                margin-left: 20%;
+                margin-right: 20%;
+                text-align: center;
+                margin-top: 10%;
+            }
+            p {
+                font-size: 300%;
+                font-family: cursive;
+            }
+            button {
+                padding-top: 5%;
+                padding-bottom: 5%;
+                padding-left: 10%;
+                padding-right: 10%;
+                background-color: rgb(253, 181, 225);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                color: rgb(36, 36, 36);
+                font-size: 150%;
+                font-family: cursive;
+                opacity: 97%;
+                border-radius: 30%;
+            }
+
+            button:hover {
+                background-color: rgb(255, 208, 235);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <p id="name">HI </p>
+            <button onclick="next()"><span>Pindot mo to</span></button><br>
+            <img src="hilo.png" width="20%" height="20%">
+        </div>
+    </body>
+    <script>
+        var name;
+        name = prompt("Name: ");
+        if (name == "Dan" || name == "dan") {
+            document.getElementById("name").innerHTML += "DANNN!!";
+        }
+        else if (name == "Ella" || name == "ella") {
+            document.getElementById("name").innerHTML += "ELLAA!!";
+        }
+        else if (name == "Daniela" || name == "daniela") {
+            document.getElementById("name").innerHTML += "DANIELAA!!";
+        }
+        else if (name == "Jo" || name == "jo") {
+            document.getElementById("name").innerHTML += "JOOOO!!";
+        }
+        else if (name == "Joy" || name == "joy") {
+            document.getElementById("name").innerHTML += "JOYYY!!";
+        }
+        else {
+            alert("Iba nilagay mo >:(");
+            alert("or hindi lang nadetect HSJAHJSHAJS");
+            document.getElementById("name").innerHTML += "ELLAAAA!!";
+        }
+
+        function next() {
+            location.href = "next.html"
+        }
+    </script>
+</html>
